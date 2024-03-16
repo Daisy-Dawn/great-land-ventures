@@ -16,7 +16,7 @@ Fixed Navigation
           <div style="background-color: #176e4c; color: rgba(255,255,255, 0.8)!important">
             <div style="float: left; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 14px; padding-bottom: 5px">
               <span class="" style="margin-right: 10px;"><img src="images/icons/email.png">
-                  <a href="mailto:support@Profitfxchain.com" style="color: rgba(255,255,255, 0.8); font-family: 'Montserrat', sans-serif; font-weight: bold;"> support@Profitfxchain.com</a>
+                  <a href="mailto:support@Profitfxchain.com" style="color: rgba(255,255,255, 0.8); font-family: 'Montserrat', sans-serif; font-weight: bold;"> support@Greatlandventures.com</a>
                 </span> 
                 <!-- <span style="font-family: 'Montserrat', sans-serif;">
                   <span class=""><img src="images/icons/phone.png"></span> For VIP members Only
@@ -66,7 +66,7 @@ Fixed Navigation
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pricing">Account Type</a>
+                                <a class="nav-link" href="pricing">Plan</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq">F.A.Q</a>

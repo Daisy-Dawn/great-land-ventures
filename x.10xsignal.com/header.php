@@ -26,7 +26,7 @@
     <meta property="article:publisher" content="pricing" />
     <meta property="article:section" content="Forex" />
     <meta name="author" content="Profitfxchain" />
-    <title>Forex trading, Binary Trading, broker | Profitfxchain</title>
+    <title>Great Land Ventures</title>
 
     <!-- Mobile Specific Meta
   ================================================== -->
