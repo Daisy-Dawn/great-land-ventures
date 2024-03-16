@@ -1,0 +1,1665 @@
+
+
+
+
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta name="robots" content="index,follow">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+    <title>Member Area -  {{$settings->site_name}} </title>
+	
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
+	 <!-- Bootstrap core CSS     -->
+    <link href="css\css\bootstrap.min.css" rel="stylesheet">
+    <!--  Material Dashboard CSS    -->
+    <link href="css\css\material-dashboard.css" rel="stylesheet">
+   
+    <!--     Fonts and icons     -->
+    <link href="css\font-awesome\latest\css\font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="css\ajax\libs\dropzone\5.1.1\min\dropzone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	  
+	  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('storage/app/public/photos/'.$settings->favicon)}}">
+  
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\font-awesome.min.css">
+    <link rel="stylesheet" href="assets\css\themify-icons.css">
+    <link rel="stylesheet" href="assets\css\metisMenu.css">
+    <link rel="stylesheet" href="assets\css\owl.carousel.min.css">
+    <link rel="stylesheet" href="assets\css\slicknav.min.css">
+
+    <!-- others css -->
+    <link rel="stylesheet" href="css\otherstyle.css">
+    <link rel="stylesheet" href="assets\css\typography.css">
+    <link rel="styles lesheet" href="assets\css\default-css.css">
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="assets\css\responsive.css">
+    <link rel="stylesheet" type="text/css" href="payment/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="payment/assets/css/demo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300" rel="stylesheet">  
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="uikit\css\uikit.min.css">
+<!-- <link rel="stylesheet" href="dist/aos.css"> -->
+<!-- <link rel="stylesheet" href="dist/animate.min.css"> -->
+<link rel="stylesheet" href="sweetalert2\dist\sweetalert2.min.css">
+<link rel="stylesheet" type="text/css" href="slick\slick\slick.css">
+<link rel="stylesheet" type="text/css" href="slick\slick\slick-theme.css">
+
+<link rel="stylesheet" href="wowmaster/css/libs/animate.css">
+<link rel="stylesheet" type="text/css" href="traderwidget\plat.css">
+    <link rel="stylesheet" type="text/css" href="traderwidget\responsive.css">
+    <!-- modernizr css -->
+    <script src="assets\js\vendor\modernizr-2.8.3.min.js"></script>
+    <style type="text/css">
+  @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700|Chivo:300,400,700,700i,900");
+   @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Catamaran|Vollkorn&display=swap');
+
+.fund_button{
+  background-color: #e73f3c; 
+  cursor: pointer; 
+  font-size: 15px; 
+  padding: 7px 20px; 
+  line-height: 32px; 
+  color: #fff; 
+  font-weight: 600; 
+  border-radius: 5px; 
+  text-align: center; 
+  margin-top: 15px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: .2s;
+  transition-duration: .2s;
+
+}
+
+.fund_button:hover{
+  background-image: linear-gradient(to bottom,#ddd,#000);
+}
+    /********************** Custom Button Styling ************************/
+.blood-button {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #6a3433;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  white-space: nowrap !important;
+  color: #6a3433;
+}
+@media (hover) {
+.blood-button:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #6a3433;
+  color: #6a3433;
+}
+
+.blood-button:hover:after {
+  width: 100%;
+  left: 0;
+
+}
+}
+.blood-button-solid {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #6a3433;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  background: #6a3433;
+  color: #fff !important;
+}
+@media (hover) {
+.blood-button-solid:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #6a3433;
+}
+
+.blood-button-solid:hover {
+  background: #fff;
+  color: #6a3433 !important;
+}
+.blood-button-solid:hover:after {
+  width: 100%;
+  left: 0;
+}
+} 
+
+
+.red-button {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #CC1632;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  white-space: nowrap !important;
+  color: #CC1632;
+}
+@media (hover) {
+.red-button:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #CC1632;
+  color: #CC1632;
+}
+
+.red-button:hover:after {
+  width: 100%;
+  left: 0;
+
+}
+}
+.red-button-solid {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #CC1632;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  background: #CC1632;
+  color: #fff !important;
+}
+@media (hover) {
+.red-button-solid:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #CC1632;
+}
+
+.red-button-solid:hover {
+  background: #fff;
+  color: #CC1632 !important;
+}
+.red-button-solid:hover:after {
+  width: 100%;
+  left: 0;
+}
+}   
+
+.blue-button {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #016696;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  white-space: nowrap !important;
+  color: #016696;
+}
+@media (hover) {
+.blue-button:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #016696;
+  color: #016696;
+}
+
+.blue-button:hover:after {
+  width: 100%;
+  left: 0;
+
+}
+}
+.blue-button-solid {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #016696;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  background: #016696;
+  color: #fff !important;
+}
+@media (hover) {
+.blue-button-solid:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #016696;
+}
+
+.blue-button-solid:hover {
+  background: #fff;
+  color: #016696 !important;
+}
+.blue-button-solid:hover:after {
+  width: 100%;
+  left: 0;
+}
+}  
+
+.lemon-button {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #8DC63F;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  white-space: nowrap !important;
+  color: #8DC63F;
+}
+@media (hover) {
+.lemon-button:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #8DC63F;
+  color: #8DC63F;
+}
+
+.lemon-button:hover:after {
+  width: 100%;
+  left: 0;
+
+}
+}
+.lemon-button-solid {
+  /***-webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;***/
+  padding: 10px 20px;
+  border: 2px solid #8DC63F;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none !important;
+  margin-top: 10px;
+  background: #8DC63F;
+  color: #fff !important;
+}
+@media (hover) {
+.lemon-button-solid:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #8DC63F;
+}
+
+.lemon-button-solid:hover {
+  background: #fff;
+  color: #8DC63F !important;
+}
+.lemon-button-solid:hover:after {
+  width: 100%;
+  left: 0;
+}
+}
+    
+    #amk_footer{
+  margin-bottom: 20px;
+  padding: 0px 40px;
+}
+
+#amk_footer h3::after {
+
+    content: "";
+    display: block;
+    background: #e9d16f;
+    height: 4px;
+    width: 98px;
+    margin: 15px 0 0;
+
+}
+
+#amk_footer h3 {
+
+    font-size: 25px;
+    font-weight: 700;
+    color: #f2da7b;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin: 0 0 38px;
+    font-family: 'Roboto Slab';
+    text-align: left!important;
+}
+
+.amk_fBox2 ul {
+
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab';
+
+}
+
+.amk_fBox2 ul li:nth-child(2n+1) {
+    float: left;
+}
+.amk_fBox2 ul li {
+    width: auto;
+    height: 34px;
+    line-height: 35px;
+
+}
+.amk_fBox2 ul li a {
+
+    color: #FFF;
+    padding-left: 22px;
+
+}
+.amk_fBox2 ul li:nth-child(2n) {
+    float: right;
+}
+
+.amk_fBox3 ul li {
+
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.amk_fBox3 ul li h4 {
+
+    font-size: 12px;
+    color: #e9d16f;
+    text-decoration: underline;
+     font-family: 'Roboto Slab', sans-serif;
+
+}
+.amk_fBox3 ul li p {
+    font-size: 12px;
+    color: #FFF;
+    line-height: 20px;
+     font-family: 'Roboto Slab', sans-serif;
+}
+
+    .counters-item {
+  /*padding-bottom: 10px;*/
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-family: 'Titillium Web';
+  margin-bottom: 10px;
+}
+
+.counters-item.kill-border:before {
+  background: none;
+}
+
+.counters-item:before {
+  background: #e5e5e5;
+  content: "";
+  margin-top: -27.5px;
+  height: 50px;
+  width: 1px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+}
+
+.counters-item > div {
+  margin: 6px 0;
+}
+
+.counters-item span {
+  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.counters-item i {
+  font-size: 30px;
+  display: inline-block;
+  color: #31BB9E;
+}
+
+.counters-item h3 {
+  font-size: 15px;
+  margin: 0;
+  color: #666;
+}
+
+.reg-form{
+  padding: 5px;
+  width: 100%!important;
+  border-radius: 7px;
+  border: 1px solid #F5F5DC ;
+}
+#reg-font{
+  color: #fff;
+}
+.reg-form:hover{
+  border: 3px solid #ADD8E6;
+}
+.profile-li{
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px!important;
+}
+.profile-li:hover{
+  background-color: #20B2AA;
+  color: #5F9EA0!important;
+
+}
+.profile-a{
+  /*background-color: #00FFFF;*/
+  color: #fff;
+  text-decoration: none;
+}
+.profile-a:hover{
+  /*background-color: #00FFFF;*/
+  text-decoration: none;
+  color: #fff;
+}
+#profile-font{
+  color: #008080;
+  font-weight: 600;
+}
+
+@font-face{
+            font-family: digital;
+            src: url('traderwidget/DS-DIGI.TTF');
+        }
+
+         @media (max-width: 600px){
+  .con-warn{
+    color: red;
+    display: block!important;
+  }
+  .converter {
+    display: none!important;
+  }
+  
+ }
+ .whatsapp{
+  top: 78%;
+}
+.back-to-top{
+  top: 90%;
+  display: none;
+}
+
+.whatsapp,.back-to-top{
+  position: fixed;
+  z-index: 999;
+  width: 45px;
+  right: 1%;
+  border: none;
+}
+    </style>
+</head>
+<body>
+ 
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container" style="background-color:#000000">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu" style="background-color: #000000!important">
+            <div class="sidebar-header" style="background-color: #000000!important">
+                <div class="logo">
+                    <!-- <a href="user.php"><img src="assets/images/icon/logo.png" alt="logo"></a> -->
+                    <a href="{{ url('/dashboard') }}"><img style="max-width: 60%;" src="{{ asset('storage/app/public/photos/'.$settings->logo)}}" alt="Node Trade Fx"></a>
+                </div>
+            </div>
+            <div class="main-menu" style="background-color: style="background-color:#000000"!important">
+                <div class="menu-inner" style="background-color: #000000!important">
+                    <nav>
+                        <ul class="metismenu" id="menu" style="font-weight: bold">
+                            <li class="" style="background-color: black">
+                                <a href="{{ url('/dashboard') }}" aria-expanded="true"><i style="color: #fff" class="ti-dashboard"></i><span class="text-white">Dashboard</span></a>
+                                
+                            </li>
+                            <li class="dropdown-header">ACCOUNT</li>
+                            <li>
+                                <a style="color: #fff; font-family: 'Titillium Web'" href="{{ url('dashboard/deposits') }}" aria-expanded="true"><i style="color: #fff" class="fa fa-money"></i><span>Deposit
+                                    </span></a>
+                            </li>
+                            
+
+          <li>
+                                <a style="color: #fff" href="{{ url('dashboard/withdrawals') }}"  aria-expanded="true"><i style="color: #fff" class="fa fa-money"></i><span>Withdraw</span></a>
+                            </li>	                  
+                            
+                            
+                            
+                             <li>
+                                <a style="color: #fff" href="{{ url('dashboard/accounthistory') }}" aria-expanded="true"><i style="color: #fff" class="fa fa-edit"></i><span>Transaction</span></a>
+                            </li>
+                            
+                           
+                            
+                            
+                           
+                            
+                            <li>
+                                <a style="color: #fff" href="{{ route('profile') }}" aria-expanded="true"><i style="color: #fff" class="fa fa-edit"></i><span>Account</span></a>
+                            </li>
+                            
+                            <li><a style="color: #fff" href="{{ url('dashboard/support') }}"><i style="color: #fff" class="ti-receipt"></i> <span>Send Feedback</span></a></li>
+							<li>
+                                <a style="color: #fff" href="{{ route('profile') }}" aria-expanded="true"><i style="color: #fff" class="fa fa-gear"></i><span>Settings</span></a>
+                            </li>
+							
+                            <li><a style="color: #fff" href="{{ route('logout') }}"  onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();"><i style="color: #fff" class="fa fa-power-off"></i> <span>LogOut</span></a></li>
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+  {{ csrf_field() }}
+</form>    
+<br><br>    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+                <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div style="background-color: #000000!important;" class="main-content">
+            <!-- header area start -->
+             <div style="background-color: brown!important" class="header-area">
+                <div style="background-color: #000000;" class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-6 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo pull-left">
+                            <a href="{{ url('/dashboard') }}"><img style="max-width: 100%;" src="{{ asset('storage/app/public/photos/'.$settings->logo)}}" alt="Binary 247 Crypto"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- header area end -->
+            <!-- page title area start -->
+            <div class="page-title-area" style="background-color:#000000">
+                <div class="row align-items-center">
+                  
+                    <div class="col-sm-12 clearfix">
+					
+					<h5 class="pull-left mt-5 text-1 text-success">
+													
+						   </h5>
+					
+                        <div class="user-profile pull-right">
+                           
+                            <h4 style="color: #000" class="user-name dropdown-toggle" data-toggle="dropdown">{{Auth::user()->email}}<i class="fa fa-angle-down"></i></h4>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ route('profile') }}">Profile</a>
+                                <a class="dropdown-item" href="{{ route('profile') }}">Settings</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">Log Out</a>
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+  {{ csrf_field() }}
+</form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            <!-- page title area end -->
+            <div class="main-content-inner">
+                <!-- sales report area start -->
+                
+                
+                <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Withdraw Response  </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3> Your account has not yet activated to make withdraw. </h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+    /*Dashboard CSS*/
+.panel-primary {
+    border-color: #00acac!important;
+}
+.panel-primary> .panel-heading {
+    border-color: #00acac!important;
+    color: white;
+    background-color: #00acac!important;
+}
+
+.panel-green {
+    border-color: #348fe2!important;
+}
+
+.panel-green > .panel-heading {
+    border-color: #348fe2!important;
+    color: white;
+    background-color: #348fe2!important;
+}
+.panel-yellow {
+    border-color: #727cb6!important;
+}
+.panel-yellow > .panel-heading {
+    border-color:#727cb6!important;
+    color: white;
+    background-color:#727cb6!important;
+}
+.panel-red {
+    border-color: #ff5b57!important;
+}
+.panel-red > .panel-heading {
+    border-color: #ff5b57!important;
+    color: white;
+    background-color: #ff5b57!important;
+}
+
+.dashboard-balance-text{
+
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+
+.new-investment-user .panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.new-investment-user h3{
+    color: #ffffff;
+}
+.new-investment-user .btn-primary{
+     background-color: #3498db;
+}
+
+
+
+.new-btn-submit {0
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    padding: 18px 33px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 0px;
+}
+
+.img-input-div{
+    margin-left: 35px;
+    margin-left: 18%;
+}
+
+.admin-header-text h3{
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.admin-header-button{
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 33px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 0px;  
+}
+.admin-header-button a{
+    color: #fff; 
+}
+.textarea-custome{
+    border-radius: 0px;
+    background-color: #ECEFF1; 
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    outline: 0;
+    padding:18px 33px;;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3498db;
+    border-color:#3498db;
+}
+
+.admin-header-button.support-btn
+{
+    background: #00315a;
+}
+.panel-default {
+    border-color: rgba(52,152,219,0.6);
+}
+
+.panel-default> .panel-heading {
+    border-color: #3498db!important;
+    color: white;
+    background-color: #3498db!important;
+}
+
+.admin-header-text.text-center.support-msg-title h3{
+    color: #000;
+}
+.page_title{
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+.open-support-btn h5{
+    background-color:#00315a;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.radious-zero{
+    border-radius:0px;
+}
+
+.input-group-addon:last-child {
+    border: 0;
+}
+
+.invest-type__profit input[type="text"]{
+    
+   color: #fff!important;
+   font-size: 20px!important;
+   font-weight: 600!important;
+   padding-bottom: 0;
+   margin-bottom: 5px;
+}
+
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    background: #3498db;
+    border-radius: 4px;
+     -moz-border-radius: 4px;  
+  -webkit-border-radius: 4px;  
+    text-align: center;
+    bottom: 70px;
+    cursor: pointer;
+    right: 2%;
+    -webkit-transition: ease-out .5s;
+    -moz-transition: ease-out .5s;
+    -o-transition: ease-out .5s;
+    transition: ease-out .5s;
+    z-index: 999;
+}
+.scroll-top i {
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.user-dashboard-body .panel-heading>h3{
+    margin-bottom: 0px!important;
+}
+
+#invest_review_modal .panel-heading>h3{
+    margin-bottom: 0px!important;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #2c3e50;
+    border-color: #46b8da;
+}
+
+.btn-info:hover {
+    color: #fff;
+     background-color: #2c3e50;
+    border-color: #46b8da;
+}
+</style>
+                
+<section style="background-color: transparent;" class="counter section-sm">
+
+  <div class="row">
+<div class=" col-lg-12 col-xs-12">
+       <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+
+
+        </div>
+</div>
+
+
+
+  </div>
+</section>
+<style type="text/css">
+  
+  .gold{
+
+  width: 300px;
+  height: 300px;
+  background: ;
+  border: 0px solid red;
+}
+
+.display{
+ 
+}
+</style>
+
+ <div class="row">
+     
+     
+     <div style="float: left;" class=" col-lg-4 col-xs-12">
+
+ <div class="  col-lg-6 col-xs-6 "  data-toggle="play-animation" data-play="bounceInDown" data-offset="0" data-delay="1000">
+           <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                  
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge dashboard-balance-text">  
+                                      @foreach($deposited as $deposited)
+                                      @if(!empty($deposited->count))
+                                      
+                        
+                                      <span data-counter="counterup" data-value="0"><i style="font-size:14px" class="fa">{{$settings->currency}}{{ number_format($deposited->count, 2, '.', ',')}}</i></span></div>
+                                      @else
+                                      <span data-counter="counterup" data-value="0"><i style="font-size:14px" class="fa">{{$settings->currency}}0.00</i></span></div>
+
+                                      @endif
+                                  @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{{ url('dashboard/deposits') }}"> 
+                            <div class="panel-footer btn-primary" style=" color:#fff">
+                                <span class="pull-left">DEPOSIT</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+        </div>
+        <div class=" col-lg-6 col-xs-6 " data-toggle="play-animation" data-play="lightSpeedIn" data-offset="0" data-delay="1500">
+           <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                               
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge dashboard-balance-text">
+                                            <span data-counter="counterup" data-value="0">
+                                              <i style="font-size:14px" class="fa">{{$settings->currency}}{{ number_format(Auth::user()->roi, 2, '.', ',')}}</i>
+                                          
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer btn-primary" style=" color:#fff">
+                                <span class="pull-left">PROFIT</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                
+
+                </a>
+                    </div>
+        </div>
+  <div style="clear: both;"></div>
+
+           <div class=" col-lg-6 col-xs-6" align="center">
+            <div class=" gold">
+
+      
+          
+          
+           
+           
+           <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Financial Markets</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "12M",
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "showFloatingTooltip": false,
+  "width": "300",
+  "height": "660",
+  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+  "gridLineColor": "rgba(42, 46, 57, 0)",
+  "scaleFontColor": "rgba(120, 123, 134, 1)",
+  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "FOREXCOM:SPXUSD",
+          "d": "S&P 500"
+        },
+        {
+          "s": "FOREXCOM:NSXUSD",
+          "d": "Nasdaq 100"
+        },
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "Dow 30"
+        },
+        {
+          "s": "INDEX:NKY",
+          "d": "Nikkei 225"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "FOREXCOM:UKXGBP",
+          "d": "UK 100"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "S&P 500"
+        },
+        {
+          "s": "CME:6E1!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UB1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:FGBL1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:FBTP1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:FGBM1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+          
+        </div>
+
+        
+     </div>
+
+
+
+    
+
+
+
+  </div>
+
+
+   <div  class=" col-lg-8 col-xs-12" data-toggle="play-animation" data-play="bounceInDown" data-offset="0" data-delay="1000">
+           <!-- TradingView Widget BEGIN -->
+<div border="1px solid red"class="tradingview-widget-container" >
+  <div id="tradingview_3d38c"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-BTCUSD/" rel="noopener" target="_blank"><span class="orange-text"></span></a> </div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" alt="checkyour network connection">
+  new TradingView.widget(
+  {
+  "width": '100%',
+  "height": 510,
+  "symbol": "COINBASE:BTCUSD",
+  "interval": "1",
+  "timezone": "exchange",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": false,
+  "container_id": "tradingview_3d38c"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+        </div>
+
+
+    
+
+
+    </div>
+
+
+
+
+
+
+<!-- row area start -->
+                <div class="row">
+     
+
+                    <!-- Live Crypto Price area start -->
+                   
+                    <!-- Live Crypto Price area end -->
+                    <!-- trading history area start -->
+                    <div class="col-lg-12 mt-sm-30 mt-xs-30">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <h4 class="header-title">Forex/ CFDs Market/Cryptocurrency</h4>
+                                    
+                                    
+                                </div>
+                                <div class="trad-history mt-4">
+                                    <div class="tab-content table-responsive" id="myTabContent">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async="">
+  {
+  "width": "100%",
+  "height": "450",
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD",
+    "CNY"
+  ],
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+<!-- TradingView Widget END -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- forex end -->
+             
+
+
+
+
+
+
+<div class="row">
+        <div class="col-md-6">
+            <div class="card card-chart" style="border:0">
+               
+               <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURUSD</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1m",
+  "width": 350,
+  "isTransparent": false,
+  "height": 450,
+  "symbol": "OANDA:EURUSD",
+  "showIntervalTabs": true,
+  "locale": "en",
+  "colorTheme": "dark"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+            </div>
+        </div>
+    
+   
+        
+        
+           <div class="col-md-6">
+            <div class="card card-chart" style="border:0">
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/GBPUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPUSD</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1m",
+  "width": 350,
+  "isTransparent": false,
+  "height": 450,
+  "symbol": "OANDA:GBPUSD",
+  "showIntervalTabs": true,
+  "locale": "en",
+  "colorTheme": "dark"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+               
+            </div>
+        </div>
+        
+     </div>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- sales report area end -->
+                <!-- overview area start -->
+                 <!-- market value area start -->
+               
+                   
+				   
+				   
+				   
+				   
+               
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+                       </div>
+                <!-- row area end -->
+                
+                <!-- row area start-->
+            </div>
+        </div>
+        <br>
+        <!-- main content area end -->
+        <!-- footer area start-->
+       
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 	
+	$("button#submit").click(function(){
+		$.ajax({
+			type: "POST",
+			url: "{{ url('/dashboard') }}",
+			data: $('form.feedback').serialize(),
+			success: function(message){
+				$("#feedback").html(upg)
+				$("#feedback-modal").modal('hide'); 
+			},
+		
+		});
+	});	
+});
+
+</script>	   
+	    <br>
+<footer style="background-color: #003366!important;">
+            <div style="background-color: #fff!important;" class="footer-area">
+                <p style="font-family: 'Chivo', sans-serif; color: #000">support@ {{$settings->site_name}}.com © Copyright 2022. All right reserved.</p>
+            </div>
+        </footer>
+        <div>
+            
+           
+
+
+       
+
+       
+        </div>    <!-- page container area end -->
+    
+    <!-- jquery latest version -->
+    <script src="assets\js\vendor\jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets\js\popper.min.js"></script>
+    <script src="assets\js\bootstrap.min.js"></script>
+    <script src="assets\js\owl.carousel.min.js"></script>
+    <script src="assets\js\metisMenu.min.js"></script>
+    <script src="assets\js\jquery.slimscroll.min.js"></script>
+    <script src="assets\js\jquery.slicknav.min.js"></script>
+
+    <!-- others plugins -->
+    <script src="assets\js\plugins.js"></script>
+    <script src="assets\js\scripts.js"></script>
+
+<script src="slick\slick\slick.js"></script>
+<script src="wowmaster/dist/wow.js"></script>
+
+<script src="traderwidget\moment.js"></script>
+<script src="traderwidget\chart.js"></script>
+<script src="traderwidget\main.js"></script>
+<script src="sweetalert2\dist\sweetalert2.min.js"></script>
+
+<script>
+     $(document).ready(function(){
+         
+    // slick slider
+         $(".variable").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        variableWidth: true,
+        slidesToShow: 3,
+  slidesToScroll: 1,
+        autoplay: true,
+  autoplaySpeed: 1000,
+      }); 
+
+
+// end of slick slider
+
+
+// end of view port detector
+ $('#toper').css("position", "sticky");
+ $('#toper').css("margin-top", "0px");
+ $('#toper').css("top", "0");
+ $('#toper').css("z-index", "1000");
+ $('a').css("font-family", "'Titillium Web', sans-serif");
+ $('button').css("font-family", "'Titillium Web', sans-serif");
+ $('p').css("font-family", "'Titillium Web', sans-serif");
+ $('h2').css("font-family", "'Titillium Web', sans-serif");
+ $('h4').css("font-family", "'Titillium Web', sans-serif");
+ $('h6').css("font-family", "'Titillium Web', sans-serif");
+ $('h1').css("font-family", "'Titillium Web', sans-serif");
+ $('h3').css("font-family", "'Titillium Web', sans-serif");
+ $('h5').css("font-family", "'Titillium Web', sans-serif");
+ $('td').css("font-family", "'Titillium Web', sans-serif");
+ $('th').css("font-family", "'Titillium Web', sans-serif");
+ $('input').css("font-family", "'Titillium Web', sans-serif");
+ $('label').css("font-family", "'Titillium Web', sans-serif");
+$('option').css("font-family", "'Titillium Web', sans-serif");
+$('select').css("font-family", "'Titillium Web', sans-serif");
+$('textarea').css("font-family", "'Titillium Web', sans-serif");
+$('li').css("font-family", "'Titillium Web', sans-serif");
+$('input').css("height", "3.25rem");
+$('select').css("height", "3.25rem");
+$('input').css("border-radius", "0px");
+$('select').css("border-radius", "0px");
+// position: sticky; top: 0; margin-top: 0px; z-index: 1000
+
+
+
+        });
+    </script>
+
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+  
+  
+  
+  
+  <script type="text/javascript">
+  (function () {
+      var options = {
+          whatsapp: "+12097987497", 
+          text: "Hello, how may we help you? Just send us a message now to get assistance.",
+          abid:"+12097987497",// WhatsApp number
+         
+          call_to_action: "Chat CEO", // Call to action
+          position: "left", // Position may be 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+  
+
+
+</body>
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+</html>
